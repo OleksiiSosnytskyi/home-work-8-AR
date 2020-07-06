@@ -1,0 +1,23 @@
+.logo {
+  color: $title-text-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.web {
+  color: $accent-color;
+}
+.logowhite {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+
+  // font-family: Raleway;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.2;
+}

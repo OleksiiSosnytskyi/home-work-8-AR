@@ -1,0 +1,66 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-btn" data-modal-close></button>
+    <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+    <form class="form">
+      <div class="form-field">
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+
+        <label for="name" class="form-label">Имя</label>
+        <svg width="12" height="12" class="form-icon">
+          <use href="./images/modal.svg#icon-men"></use>
+        </svg>
+      </div>
+      <div class="form-field">
+        <input
+          class="form-input"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+
+        <label for="tel" class="form-label">Телефон</label>
+        <svg width="13" height="13" class="form-icon">
+          <use href="./images/modal.svg#icon-phone"></use>
+        </svg>
+      </div>
+      <div class="form-field">
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" "
+        />
+
+        <label class="form-label" for="email">Почта</label>
+        <svg width="15" height="12" class="form-icon">
+          <use href="./images/modal.svg#icon-email"></use>
+        </svg>
+      </div>
+      <div class="textarea">
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Комментарий"
+        ></textarea>
+        <label class="textarea-title" for="comment"></label>
+      </div>
+      <label class="label">
+        <input class="checkbox" type="checkbox" name="policy" required />
+        <span class="checkbox-icon"></span>
+        Соглашаюсь с рассылкой и принимаю
+        <a href="#">Условия договора</a>
+      </label>
+
+      <button class="button">Отправить</button>
+    </form>
+  </div>
+</div>

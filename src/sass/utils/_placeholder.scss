@@ -1,0 +1,16 @@
+.hidden {
+  display: none;
+}
+
+%flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+%inline-flex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

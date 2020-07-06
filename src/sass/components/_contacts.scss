@@ -1,0 +1,64 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item {
+  align-self: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.contacts-link {
+  color: $primary-text-color;
+  @extend %inline-flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-logo {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.address {
+  margin-right: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &-kiev {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: $primary-white-color;
+    font-style: normal;
+  }
+}
+
+.footer-address {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,9 @@
+.footer-list {
+  @extend %flexbox;
+}
+footer {
+  background-color: #2f303a;
+}
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
