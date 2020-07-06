@@ -1,4 +1,7 @@
 .section {
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -10,11 +13,15 @@
   }
 }
 
+.section.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .section-title {
   color: $title-text-color;
 
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
 
@@ -22,19 +29,24 @@
     margin-bottom: 30px;
     font-size: 28px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.directions {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    margin: -15px;
   }
 }
 
 .team {
   background-color: $secondary-background-color;
-}
-.directions {
-  @media screen and (min-width: 1200px) {
-    padding-top: 0;
-  }
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
 }

@@ -1,7 +1,5 @@
 .clients-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  @extend %inline-flex;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -19,9 +17,21 @@
   }
 }
 
-.footer-links {
-  margin-top: 72px;
-}
 .clients-link .clients-logo {
   fill: currentColor;
+}
+
+.footer-links {
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    // margin-bottom: 57px;
+  }
 }
