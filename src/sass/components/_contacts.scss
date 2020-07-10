@@ -64,19 +64,22 @@
 }
 
 .address {
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 70px;
+    text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
   }
 
   &-kiev {
     display: inline-block;
     margin-bottom: 9px;
     color: $primary-white-color;
+    // font-weight: normal;
     font-style: normal;
+    letter-spacing: 0.03em;
   }
 }
 
