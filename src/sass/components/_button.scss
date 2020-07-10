@@ -15,16 +15,41 @@
   letter-spacing: 0.06em;
 }
 
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-close:hover {
+    fill: $accent-color;
+  }
+}
+
 .buttons {
   @extend %flexbox;
+  justify-content: start;
   border-radius: 4px;
 
   @media screen and (min-width: 480px) {
-    // margin-top: 15px;
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
+    justify-content: center;
     margin-bottom: 30px;
   }
 
@@ -34,7 +59,7 @@
 }
 
 .buttons-item {
-  @media screen and (max-wids: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 }
