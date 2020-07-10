@@ -6,16 +6,20 @@
   width: 358px;
   letter-spacing: 0.03em;
   padding: 15px 16px;
-  margin-right: 12px;
   color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
 .subscribe-button::after {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   background-image: url(../images/send.svg);

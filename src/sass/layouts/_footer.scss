@@ -11,6 +11,12 @@ footer {
     margin-top: 60px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 80px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-top: 0;
@@ -25,6 +31,11 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    // justify-content: ;
   }
 }
