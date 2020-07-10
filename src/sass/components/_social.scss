@@ -4,8 +4,8 @@
   align-items: center;
 
   width: 100%;
-  margin-bottom: 24px;
-  margin: -10px;
+  // margin-bottom: 24px;
+  // margin: -10px;
 }
 
 .socials-icon,
@@ -41,9 +41,9 @@
   height: 20px;
 }
 
-.socials-item,
-.footer-item {
-  margin: 5px;
+.socials-item:not(:last-child),
+.footer-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 // .socials-item:not(:last-child),
