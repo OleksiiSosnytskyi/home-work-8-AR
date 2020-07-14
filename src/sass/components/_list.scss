@@ -76,9 +76,14 @@
 }
 
 .clients .section-list {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
+  // @media screen and (min-width: 480px) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients .section-list {
+  @media screen and (max-width: 480px) {
+    justify-content: center;
   }
 }
 
@@ -111,28 +116,3 @@
 .clients-item:focus {
   color: $accent-color;
 }
-
-// .clients-item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-// .clients-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .advantages-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .team-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .directions-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
